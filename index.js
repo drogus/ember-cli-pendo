@@ -4,7 +4,7 @@
 module.exports = {
   name: 'ember-cli-pendo',
   isDevelopingAddon: function() {
-    return true;
+    return false;
   },
   contentFor: function(type, config) {
     if (type === 'body') {
