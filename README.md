@@ -20,5 +20,14 @@ The pendo javascript api is now avaliable globally at window.pendo
 
 For example,
 ```javascript
-window.pendo.identify(options);
+var data = {
+  visitor: {
+    id: user.get('id'),
+    email: user.get('email')
+  },
+  account: {
+    id: account.get('id')
+  }
+};
+window.pendo.identify(data);
 ```
