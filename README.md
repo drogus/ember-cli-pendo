@@ -1,25 +1,24 @@
 # Ember-cli-pendo
 
-This README outlines the details of collaborating on this Ember addon.
+Add pendo to your application.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install Ember-cli-pendo`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Configure your pendo api key in environment.js
+```javascript
+// environment.js
+ENV['ember-cli-pendo'] = {
+  apiKey: 'abc-123'
+};
+```
 
-## Running Tests
+The pendo javascript api is now avaliable globally at window.pendo
 
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+For example,
+```javascript
+window.pendo.identify(options);
+```
