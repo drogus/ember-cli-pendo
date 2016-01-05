@@ -4,7 +4,7 @@ Add pendo to your application.
 
 ## Installation
 
-`ember install Ember-cli-pendo`
+`ember install ember-cli-pendo`
 
 ## Usage
 
