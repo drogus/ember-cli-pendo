@@ -7,7 +7,7 @@ module.exports = {
     return false;
   },
   contentFor: function(type, config) {
-    if (type === 'body' && config !== 'test') {
+    if (type === 'body' && config.environment !== 'test') {
       return "<script>" +
         "window.pendo_options = {" +
         "  apiKey: '${config['ember-cli-pendo'].apiKey}'," +
