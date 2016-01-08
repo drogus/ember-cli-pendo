@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-pendo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ember-cli-addon for pendo.",
   "directories": {
     "doc": "doc",
