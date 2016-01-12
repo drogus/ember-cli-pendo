@@ -8,21 +8,21 @@ module.exports = {
   },
   contentFor: function(type, config) {
     if (type === 'head' && config.environment !== 'test') {
-      return "<script>" +
-        "window.pendo_options = {" +
-        "  apiKey: '" + config['ember-cli-pendo'].apiKey + "'," +
-        "  // This is required to be able to load data client side" +
-        "  usePendoAgentAPI: true" +
-        "};" +
-        "(function() {" +
-        "  var script = document.createElement('script');" +
-        "  script.type = 'text/javascript';" +
-        "  script.async = true;" +
-        "  script.src = ('https:' === document.location.protocol ? 'https://' : 'http://' ) + 'd3accju1t3mngt.cloudfront.net/js/pa.min.js';" +
-        "  var firstScript = document.getElementsByTagName('script')[0];" +
-        "  firstScript.parentNode.insertBefore(script, firstScript);" +
-        "})();" +
-        "</script>";
+      return "<script>\n" +
+        "window.pendo_options = {\n" +
+        "  apiKey: '" + config['ember-cli-pendo'].apiKey + "',\n" +
+        "  // This is required to be able to load data client side\n" +
+        "  usePendoAgentAPI: true\n" +
+        "};\n" +
+        "(function() {\n" +
+        "  var script = document.createElement('script');\n" +
+        "  script.type = 'text/javascript';\n" +
+        "  script.async = true;\n" +
+        "  script.src = ('https:' === document.location.protocol ? 'https://' : 'http://' ) + 'd3accju1t3mngt.cloudfront.net/js/pa.min.js';\n" +
+        "  var firstScript = document.getElementsByTagName('script')[0];\n" +
+        "  firstScript.parentNode.insertBefore(script, firstScript);\n" +
+        "})();\n" +
+        "</script>\n";
     }
   }
 };
