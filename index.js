@@ -10,7 +10,7 @@ module.exports = {
     if (type === 'body' && config.environment !== 'test') {
       return "<script>" +
         "window.pendo_options = {" +
-        "  apiKey: '${config['ember-cli-pendo'].apiKey}'," +
+        "  apiKey: '" + config['ember-cli-pendo'].apiKey + "'," +
         "  // This is required to be able to load data client side" +
         "  usePendoAgentAPI: true" +
         "};" +
